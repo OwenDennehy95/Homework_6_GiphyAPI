@@ -1,0 +1,99 @@
+body{
+    background-image: url(../images/Sprawl_Mart.png);
+    background-repeat: no-repeat;
+    background-color: rgba(251, 7, 7, 0.657);
+
+    }
+.container{
+    border: 5px;
+    border-style: dashed;
+    color: rgba(42, 42, 134, 0.849);
+    width: 80%;
+    margin: 30px auto;
+    background-color: rgba(121, 169, 233, 0.657);
+}
+h1, h2, h3 {
+    border: 5px;
+    border-style: dashed;
+    background-color:rgba(148, 161, 182, 0.842);
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+    color: rgba(42, 42, 134, 0.849);
+}
+h1 {
+    font-family: 'VT323', monospace;
+    background-color: rgba(251, 7, 7, 0.657);
+    color: rgba(42, 42, 134, 0.849);
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-size: 100px;
+}
+    
+h2{
+    font-family: 'VT323', monospace;
+    background-color: rgba(251, 7, 7, 0.657);
+    color: rgba(42, 42, 134, 0.849);
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000
+
+}
+h3{
+    font-family: 'VT323', monospace;
+    background-color: rgba(251, 7, 7, 0.657);
+    color: rgba(42, 42, 134, 0.849);
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000
+
+}
+form{
+    border: 5px;
+    border-style: dashed;
+    background-color:rgba(148, 161, 182, 0.842);
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+    color: rgba(42, 42, 134, 0.849);
+}
+#giphy-dump{
+    border: 5px;
+    border-style: dashed;
+    background-color:rgba(148, 161, 182, 0.842);
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+    color: rgba(42, 42, 134, 0.849);
+
+}
+#button-view{
+    border: 5px;
+    border-style: dashed;
+    background-color:rgba(148, 161, 182, 0.842);
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+    color: rgba(42, 42, 134, 0.849);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
