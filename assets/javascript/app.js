@@ -13,32 +13,39 @@
           method: "GET"
         }).then(function(response) {
             console.log(response)
+ 
+        var results = response.data
 
+        for ( var i = 0; i < 10; i++){
 
-            
-        
-          var inputDiv = $("<div class='input'>");
+        var topicDiv = $("<div class='topic'>")
 
-          var dataResponse = response.data;
+        var rating = results[i].rating;
 
-          
-          var pOne = $("<p>").text("Rating: " + gif);
+        var rated = $("<p>").text("Rating: " + rating);
 
-         
-          inputDiv.append(pOne);
+        topicDiv.append(rated);
 
+        var image = $("<img>");
 
-          var imgURL = response.url;
+        image.addClass("gif");
 
-          var image = $("<img>").attr("src", imgURL);
+        image.attr("src", results[i].images.fixed_height_still.url);
 
-          // Appending the image
-          inputDiv.append(image);
+        image.attr("data-state", "still")
 
-          $("#button-view").prepend(movieDiv);
-        });
+        image.attr("data-still", results[i].images.fixed_height_still.url);
 
-      }
+        image.attr("data-animate", results[i].images.fixed_height.url);
+
+        topicDiv.append(image)
+
+        $("#gifhy-dump").prepend(topicDiv);
+
+        }
+
+    })
+};
 
       // Function for displaying data
       function renderButtons() {
@@ -59,7 +66,7 @@
           // Adding the button 
           $("#button-view").append(a);
         }
-      }
+      };
 
       // function handles events where button is clicked
       $("#button-add").on("click", function(event) {
